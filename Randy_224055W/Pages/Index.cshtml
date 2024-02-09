@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>User information</p>
+
+    @{
+        <div class="container">
+            <div>Name: @Model.User.Name</div>
+            <div>Email: @Model.User.Email</div>
+            <div>Gender: @Model.User.Gender</div>
+            <div>Date of birth: @Model.User.DateOfBirth</div>
+            <div>Protected NRIC: @Model.ProtectedNRIC</div>
+            <div>Unprotected NRIC: @Model.User.NRIC</div>
+        </div>
+    }
+</div>
